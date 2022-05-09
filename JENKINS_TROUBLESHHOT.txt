@@ -1,0 +1,9 @@
+***********************************To troubleshoot while default user have all permissions ************
+
+1) sudo su -
+2) cd /var/lib/jenkins
+3) vi config.xml
+4) Make /use security to false
+5) and comment <authorizationStrategy to   </securityRealm>
+6) go to Manage Jenkins---->configure global security---------> jenkins’ own user database (uncheck)Allow users to sign up --->Logged-in users can do anything (Unchecheck Allow anonymous read access)
+7) Click On Save
